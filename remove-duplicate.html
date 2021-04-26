@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var arr=[4, "g", 4, "test", 5, 6, "g", 4]; 
+       var arr2 = [];
+       let variable;
+       var str=" ";
+    for (let i = 0; i < arr.length; i++) {
+         variable = false;
+        for (j = 0; j < arr2.length; j++) {
+      if (arr[i] === arr2[j]) {
+        variable  = true;
+        break;
+      }
+    }
+    if (!variable ) {
+      arr2.push(arr[i]);
+    }
+  }
+  for(var x=0;x<arr2.length;x++){
+   str+=arr2[x]+" , ";
+  }
+  alert(str);
+           </script> 
+</body>
+</html>
